@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess My Number</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-over modal hidden">
+      Here's a slice of pizza 🍕 to cheer u up!! Wanna play again ? Press
+      "Again!" button on top left corner on your screen .
+    </div>
+    <div class="overlay hidden"></div>
+    <main>
+      <div class="container">
+        <h1>Guess My Number!</h1>
+        <p class="between">Between 1 and 20</p>
+        <button class="btn again">Again!</button>
+        <div class="number">?</div>
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score : <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore : <span class="highscore">0</span>
+        </p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

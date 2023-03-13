@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Black Ops One", sans-serif;
+  height: inherit;
+  color: #fff;
+  background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2.5rem;
+  width: 80vw;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+.between {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem 0.2rem;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: inherit;
+  letter-spacing: inherit;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.8rem 1.6rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btn:active {
+  scale: 0.9;
+  box-shadow: none;
+}
+
+.again {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.number {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  width: 10rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 1rem 0;
+}
+
+.guess {
+  background: none;
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  font-family: inherit;
+  color: inherit;
+  font-size: 2rem;
+  padding: 1rem;
+  width: 10rem;
+  text-align: center;
+  display: block;
+}
+
+.guess:focus {
+  outline: none;
+}
+
+.check {
+  margin-bottom: 2rem;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.game-over {
+  font-weight: bold;
+  color: inherit;
+  text-align: center;
+  position: absolute;
+  font-size: 2rem;
+  padding: 4rem;
+  background-color: rgba(44, 83, 100, 0.7);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  max-width: 580px;
+  width: 80%;
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .container {
+    max-width: 610px;
+  }
+}
